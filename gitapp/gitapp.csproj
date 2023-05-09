@@ -7,7 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include=".github\workflows\workflow.yml" />
+    <Compile Remove=".github\workflows\**" />
+    <Content Remove=".github\workflows\**" />
+    <EmbeddedResource Remove=".github\workflows\**" />
+    <None Remove=".github\workflows\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include=".github\workfows\workflow.yml" />
   </ItemGroup>
 
 </Project>
